@@ -14,12 +14,9 @@ get_attribute(Hourse, Key) ->
     get_value(T, Key).
 
 % a helper function to get value from a {key, value} list.
-get_value(Pairs, Key) -> 
-    [H | T] = Pairs,
+get_value([H | T], Key) ->
     case H of
-        [] -> nil;
         {Key, Value} -> Value;
         H -> get_value(T, Key)
-    end.
-
-
+    end;
+get_value([], _) -> nil.
