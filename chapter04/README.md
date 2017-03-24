@@ -19,12 +19,12 @@ pages for equivalent routines. Implement any glaring omissions.
 5. Write a module called math_functions.erl , exporting the functions even/1 and
 odd/1 . The function even(X) should return true if X is an even integer and
 otherwise false. odd(X) should return true if X is an odd integer.
-	* [math_functions.erl](math_functions.erl)
+	* [math_function.erl](math_function.erl)
 6. Add a higher-order function to math_functions.erl called filter(F, L) , which returns
 all the elements X in L for which F(X) is true .
-	* [math_functions.erl](math_functions.erl)
+	* [math_function.erl](math_function.erl)
 7. Add a function split(L) to math_functions.erl , which returns {Even, Odd} where
 Even is a list of all the even numbers in L and Odd is a list of all the odd
 numbers in L . Write this function in two different ways using accumulators
 and using the function filter you wrote in the previous exercise.
-	* [math_functions.erl](math_functions.erl)
+	* [math_function.erl](math_function.erl)
